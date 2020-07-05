@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/css?family=Roboto|Roboto Mono";
+
+:root {
+  --purple: #892ca0;
+  --white: #eed7f4;
+  --dark: #220b28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--purple);
+}
+
+.title {
+  background-color: var(--white);
+  color: var(--purple);
+  font-size: 1.5em;
+  padding-left: 6em;
+  text-shadow: 1px 1px var(--dark);
+}
+
+main {
+  margin-left: 10em;
+}
+
+nav {
+  position: fixed;
+  background-color: var(--purple);
+  min-height: 40em;
+  border-right: 2px solid var(--white);
+}
+
+nav > header {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1em;
+  font-size: 1em;
+  text-shadow: 1px 1px var(--dark);
+}
+
+.nav-link {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid var(--white);
+}
+
+.nav-link:hover {
+  background-color: var(--dark);
+  color: var(--white);
+  transition: background-color 1s;
+}
+
+.main-section {
+  margin-top: 2.5em;
+}
+
+.main-section header {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  margin: 1em;
+}
+
+.main-section p{
+  padding: 0 2em;
+}
+
+.main-section ol {
+  padding: 0.5em 5em;
+}
+
+code {
+  font-family: "Roboto Mono", monospace;
+}
+
+.code {
+  background-color: var(--white);
+  color: var(--purple);
+  margin: 0.5em 2em;
+  padding: 0.5em 2em;
+  border-left: 6px solid var(--purple);
+  border-radius: 2px;
+}
+
+.page-end {
+  min-width: 2.5em;
+}
+
+
+/*
+  Media Queries
+*/
+@media screen and (min-width: 800px) {
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    margin-left: 1em;
+  }
+
+  .title {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    margin-left: 1em;
+  }
+
+  .title {
+    display: block;
+    padding-left: 1em;
+  }
+}
