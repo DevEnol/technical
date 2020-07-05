@@ -45,7 +45,7 @@ main {
 nav {
   position: fixed;
   background-color: var(--purple);
-  min-height: 40em;
+  height: 100vh;
   border-right: 2px solid var(--white);
 }
 
